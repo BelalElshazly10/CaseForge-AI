@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-950 text-white min-h-screen;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+}
+
+/* ── Contract Markdown Preview Styles ── */
+.contract-preview {
+  color: #d1d5db;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.contract-preview h1 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid rgba(168, 85, 247, 0.3);
+}
+
+.contract-preview h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #c4b5fd;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(107, 114, 128, 0.3);
+}
+
+.contract-preview h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #a5b4fc;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contract-preview p {
+  margin-bottom: 0.75rem;
+  color: #d1d5db;
+}
+
+.contract-preview ul,
+.contract-preview ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.contract-preview ul {
+  list-style-type: disc;
+}
+
+.contract-preview ol {
+  list-style-type: decimal;
+}
+
+.contract-preview li {
+  margin-bottom: 0.35rem;
+  color: #d1d5db;
+}
+
+.contract-preview li::marker {
+  color: #a78bfa;
+}
+
+.contract-preview strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.contract-preview em {
+  color: #c4b5fd;
+  font-style: italic;
+}
+
+.contract-preview a {
+  color: #818cf8;
+  text-decoration: underline;
+}
+
+.contract-preview a:hover {
+  color: #a5b4fc;
+}
+
+.contract-preview blockquote {
+  border-left: 3px solid #7c3aed;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  background: rgba(124, 58, 237, 0.08);
+  border-radius: 0 0.5rem 0.5rem 0;
+  color: #c4b5fd;
+}
+
+.contract-preview code {
+  background: rgba(31, 41, 55, 0.8);
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.25rem;
+  font-size: 0.85em;
+  font-family: 'Fira Code', 'Cascadia Code', 'JetBrains Mono', monospace;
+  color: #a5b4fc;
+  border: 1px solid rgba(75, 85, 99, 0.5);
+}
+
+.contract-preview pre {
+  background: #111827;
+  padding: 1rem 1.25rem;
+  border-radius: 0.75rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+  border: 1px solid #1f2937;
+}
+
+.contract-preview pre code {
+  background: none;
+  padding: 0;
+  border: none;
+  font-size: 0.85rem;
+  color: #d1d5db;
+}
+
+.contract-preview hr {
+  border: none;
+  border-top: 1px solid rgba(107, 114, 128, 0.3);
+  margin: 2rem 0;
+}
+
+/* Tables */
+.contract-preview table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid #1f2937;
+}
+
+.contract-preview thead th {
+  background: rgba(88, 28, 135, 0.2);
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 700;
+  color: #c4b5fd;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid rgba(168, 85, 247, 0.3);
+}
+
+.contract-preview tbody td {
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid rgba(31, 41, 55, 0.8);
+  color: #d1d5db;
+  font-size: 0.9rem;
+}
+
+.contract-preview tbody tr:hover {
+  background: rgba(31, 41, 55, 0.4);
+}
+
+.contract-preview tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Checkbox lists */
+.contract-preview input[type="checkbox"] {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid #6b7280;
+  border-radius: 0.25rem;
+  background: transparent;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+}
+
+.contract-preview input[type="checkbox"]:checked {
+  background: #7c3aed;
+  border-color: #7c3aed;
+}
+
+.contract-preview input[type="checkbox"]:checked::after {
+  content: '✓';
+  position: absolute;
+  top: -2px;
+  left: 1px;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+}

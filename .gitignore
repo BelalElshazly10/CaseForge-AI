@@ -1,0 +1,28 @@
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+.pytest_cache/
+.coverage/
+
+# React / Node
+node_modules/
+dist/
+
+# Logs and temporary files
+*.log
+logs/
+.DS_Store
+Thumbs.db
+
+# Nested Git metadata
+.git/
+CaseForge Backend/api/mx.py
+CaseForge Backend/api/test.py
